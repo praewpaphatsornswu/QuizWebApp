@@ -85,10 +85,19 @@ Non-Functional Requirements
 
 โค้ดสามารถทดสอบได้
 
-7. Process, Methods, and Tools
+7.Use case diagram
+
+
+8. Process, Methods, and Tools
 
 ใช้กระบวนการพัฒนาแบบ Agile
 
 ใช้ GitHub Repository สำหรับควบคุมเวอร์ชันและการทำงานร่วมกัน
 
 พัฒนา Backend ด้วย Node.js
+
+9.สรุปขั้นตอนการทำ requirement (with youtube video showing the interview)
+
+10.เขียนสรุปการประชุม Retrospective และ Link (in the report) to Retrospective Youtube video
+
+

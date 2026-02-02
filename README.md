@@ -66,7 +66,7 @@ Data structure เหล่านี้จะถูกนำมาใช้ใ�
 
 ระบบสอบที่มีความซับซ้อน
 
-6. ⚙ Functional & Non-Functional Requirements
+6. Functional & Non-Functional Requirements
 Functional Requirements
 
 ผู้ใช้สามารถทำข้อสอบออนไลน์ได้
@@ -85,7 +85,7 @@ Non-Functional Requirements
 
 โค้ดสามารถทดสอบได้
 
-7. 🔧 Process, Methods, and Tools
+7. Process, Methods, and Tools
 
 ใช้กระบวนการพัฒนาแบบ Agile
 

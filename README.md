@@ -119,8 +119,7 @@
    - CSS, HTML, JavaScript (VS Code)
 * พัฒนา Backend
    - JavaScript (Node.js)
-  Framework
-   - Express.js
+   - Framework (Express.js)
   ใช้รับคำขอจากผู้ใช้, ตรวจคำตอบ, คำนวณคะแนน, ส่งผลคะแนนกลับไป
 * พัฒนา Database
    - 

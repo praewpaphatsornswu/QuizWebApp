@@ -114,8 +114,16 @@
 
 * ใช้กระบวนการพัฒนาแบบ Agile
 * ใช้ GitHub Repository สำหรับควบคุมเวอร์ชันและทำงานร่วมกันภายในทีม
-* พัฒนา Frontend หน้าเว็บไซต์ด้วย ภาษา HTML, VS Code
-* พัฒนา Backend ด้วย Node.js
+* ใช้ Web Browser เป็นช่องทางหลักในการเข้าถึงระบบ
+* พัฒนา Frontend หน้าเว็บไซต์
+   - CSS, HTML, JavaScript (VS Code)
+* พัฒนา Backend
+   - JavaScript (Node.js)
+  Framework
+   - Express.js
+  ใช้รับคำขอจากผู้ใช้, ตรวจคำตอบ, คำนวณคะแนน, ส่งผลคะแนนกลับไป
+* พัฒนา Database
+   - 
 * ใช้ Web Browser เป็นช่องทางหลักในการเข้าถึงระบบ
 
 ---

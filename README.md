@@ -148,6 +148,8 @@
 ## 12. Design document
 
 12.1. Architectural design
+
+```mermaid
 flowchart LR
 
 User[User / Admin]
@@ -179,6 +181,7 @@ D --> A
 
 12.2. Use Case Diagram
 
+```mermaid
 usecaseDiagram
 
 actor User

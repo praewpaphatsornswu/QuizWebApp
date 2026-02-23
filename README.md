@@ -135,7 +135,7 @@
 
 ---
 
-## 11. สรุปผลการประชุม Retrospective
+## 11. สรุปผลการประชุม Retrospective Phase 1
 
 ทีมงานได้มีการจัดประชุม Retrospective หลังการดำเนินงานในแต่ละช่วง โดยมีข้อสรุปดังนี้
 
@@ -144,5 +144,60 @@
 * **แนวทางการพัฒนาในอนาคต:** ปรับปรุงกระบวนการทำงานให้มีประสิทธิภาพและลดปัญหาที่อาจเกิดขึ้นซ้ำ
 
 ลิงก์วิดีโอ Retrospective: https://youtu.be/8sUTdzBlkeQ?si=CepGhHKbjgSgSOSg
+
+## 12. Design document
+
+12.1. Architectural design
+flowchart LR
+
+User[User / Admin]
+
+subgraph Frontend (Presentation Layer)
+    A[HTML]
+    B[CSS]
+    C[JavaScript]
+end
+
+subgraph Backend (Application Layer)
+    D[Node.js]
+    E[Express.js]
+end
+
+subgraph Database (Data Layer)
+    F[(Database)]
+end
+
+User --> A
+A --> D
+B --> D
+C --> D
+D --> E
+E --> F
+F --> E
+E --> D
+D --> A
+
+12.2. Use Case Diagram
+
+usecaseDiagram
+
+actor User
+actor Admin
+
+User --> (Register)
+User --> (Login)
+User --> (Logout)
+
+User --> (Start Quiz)
+User --> (Answer Questions)
+User --> (Submit Quiz)
+
+User --> (View Score)
+User --> (View Statistics)
+User --> (View Quiz History)
+
+Admin --> (Manage Users)
+Admin --> (Manage Quiz)
+Admin --> (View Reports)
 
 

@@ -145,9 +145,9 @@
 
 ลิงก์วิดีโอ Retrospective: https://youtu.be/8sUTdzBlkeQ?si=CepGhHKbjgSgSOSg
 
-## 12. Design document
+## 12. Design Document
 
-12.1. Architectural design
+### 12.1 Architectural Design
 
 ```mermaid
 flowchart LR
@@ -178,8 +178,9 @@ E --> F
 F --> E
 E --> D
 D --> A
+```
 
-12.2. Use Case Diagram
+### 12.2 Use Case Diagram
 
 ```mermaid
 usecaseDiagram
@@ -202,4 +203,4 @@ User --> (View Quiz History)
 Admin --> (Manage Users)
 Admin --> (Manage Quiz)
 Admin --> (View Reports)
-
+```

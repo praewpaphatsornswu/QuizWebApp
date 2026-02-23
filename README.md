@@ -183,24 +183,24 @@ D --> A
 ### 12.2 Use Case Diagram
 
 ```mermaid
-usecaseDiagram
+flowchart LR
 
-actor User
-actor Admin
+User((User))
+Admin((Admin))
 
-User --> (Register)
-User --> (Login)
-User --> (Logout)
+User --> Register[Register]
+User --> Login[Login]
+User --> Logout[Logout]
 
-User --> (Start Quiz)
-User --> (Answer Questions)
-User --> (Submit Quiz)
+User --> StartQuiz[Start Quiz]
+User --> Answer[Answer Questions]
+User --> Submit[Submit Quiz]
 
-User --> (View Score)
-User --> (View Statistics)
-User --> (View Quiz History)
+User --> ViewScore[View Score]
+User --> ViewStats[View Statistics]
+User --> History[View Quiz History]
 
-Admin --> (Manage Users)
-Admin --> (Manage Quiz)
-Admin --> (View Reports)
+Admin --> ManageUsers[Manage Users]
+Admin --> ManageQuiz[Manage Quiz]
+Admin --> ViewReports[View Reports]
 ```

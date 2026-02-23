@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizWeb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e8fdf5, #ffffff);
+            color: #1b4332;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2d6a4f;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #1b4332;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2d6a4f;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 2px solid #2d6a4f;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #2d6a4f;
+            color: white !important;
+        }
+
+        .btn-primary:hover {
+            background: #1b4332;
+        }
+
+        .btn-outline:hover {
+            background: #2d6a4f;
+            color: white !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #344e41;
+        }
+
+        .hero-buttons button {
+            padding: 12px 22px;
+            margin-right: 15px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .create-btn {
+            background: #2d6a4f;
+            color: white;
+        }
+
+        .create-btn:hover {
+            background: #1b4332;
+        }
+
+        .play-btn {
+            background: white;
+            border: 2px solid #2d6a4f;
+            color: #2d6a4f;
+        }
+
+        .play-btn:hover {
+            background: #2d6a4f;
+            color: white;
+        }
+
+        .hero-image img {
+            width: 400px;
+            max-width: 100%;
+        }
+
+        /* Section */
+        .features {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            margin-bottom: 40px;
+        }
+
+        .feature-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2d6a4f;
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .hero-buttons button {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo"> quizWeb </div>
+    <div class="nav-links">
+        <a href="index.html"> หน้าแรก </a>
+        <a href="#"> เกี่ยวกับ </a>
+        <a href="dashboard.html"> คลังข้อสอบ </a>
+        <a href="login.html" class="btn btn-outline">เข้าสู่ระบบ</a>
+        <a href="register.html" class="btn btn-primary">ลงทะเบียน</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>สร้างควิซออนไลน์ง่ายๆ ด้วย quizWeb</h1>
+        <p>
+            สร้างข้อสอบในบทบาท "ผู้สร้าง" และแชร์รหัสให้ผู้เล่นเข้าทำข้อสอบได้ทันที
+            ใช้งานง่าย สวยงาม และรวดเร็ว
+        </p>
+        <div class="hero-buttons">
+            <button class="create-btn" onclick="location.href='create.html'">สร้างควิซ</button>
+            <button class="play-btn">กรอกรหัสเพื่อเล่น</button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="quiz illustration">
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <h2>ฟีเจอร์หลักของ quizWeb</h2>
+    <div class="feature-boxes">
+        <div class="feature">
+            <h3>🎯 สร้างควิซง่าย</h3>
+            <p>เพิ่มคำถาม ตัวเลือก และคำตอบได้ทันที</p>
+        </div>
+
+        <div class="feature">
+            <h3>🔑 รับรหัสข้อสอบ</h3>
+            <p>ระบบสร้างรหัสอัตโนมัติสำหรับแชร์ให้ผู้เล่น</p>
+        </div>
+
+        <div class="feature">
+            <h3>📊 ดูผลคะแนน</h3>
+            <p>ตรวจคำตอบและแสดงคะแนนทันที</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 quizWeb | ระบบสร้างและเล่นควิซออนไลน์
+</footer>
+
+</body>
+</html>

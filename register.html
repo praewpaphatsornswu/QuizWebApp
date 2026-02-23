@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | quizWeb</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+
+/* ===== Navbar ===== */
+nav{
+    background:#ffffff;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-weight:600;
+    font-size:18px;
+    color:#2d6a4f;
+}
+
+.nav-links a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+}
+
+.nav-links a:hover{
+    color:#2d6a4f;
+}
+
+/* ===== Layout ===== */
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#e8fdf5,#ffffff);
+}
+
+.page{
+    height:calc(100vh - 70px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===== Register Box ===== */
+.container{
+    background:#fff;
+    padding:40px;
+    width:380px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2d6a4f;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+label{
+    font-size:14px;
+    font-weight:500;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+input:focus{
+    border-color:#2d6a4f;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2d6a4f;
+    color:#fff;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1b4332;
+}
+
+.error{
+    color:red;
+    font-size:13px;
+    margin-top:5px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+
+.footer a{
+    color:#2d6a4f;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav>
+    <div class="logo">quizWeb</div>
+    <div class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="dashboard.html">คลังข้อสอบ</a>
+        <a href="create.html">สร้างควิซ</a>
+        <span id="authArea"></span>
+    </div>
+</nav>
+
+<div class="page">
+<div class="container">
+    <h2>Create Account</h2>
+
+    <form id="registerForm">
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="username" required>
+            <div class="error" id="userError"></div>
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="password" required>
+            <div class="error" id="passError"></div>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="footer">
+        Already have an account? <a href="login.html">Login</a>
+    </div>
+</div>
+</div>
+
+<script>
+const authArea = document.getElementById("authArea");
+const currentUser = localStorage.getItem("currentUser");
+
+if(currentUser){
+    authArea.innerHTML = `
+        <span style="margin-left:20px;">👤 ${currentUser}</span>
+        <a href="#" onclick="logout()">ออกจากระบบ</a>
+    `;
+}else{
+    authArea.innerHTML = `
+        <a href="login.html">เข้าสู่ระบบ</a>
+        <a href="register.html">ลงทะเบียน</a>
+    `;
+}
+
+function logout(){
+    localStorage.removeItem("currentUser");
+    window.location.href = "index.html";
+}
+
+/* ===== Register Logic ===== */
+const form = document.getElementById("registerForm");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value;
+    const userError = document.getElementById("userError");
+    const passError = document.getElementById("passError");
+
+    userError.textContent = "";
+    passError.textContent = "";
+
+    if(username.length < 4){
+        userError.textContent = "Username ต้องอย่างน้อย 4 ตัวอักษร";
+        return;
+    }
+
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+    if(!passwordPattern.test(password)){
+        passError.textContent = "Password ต้องมี A-Z, a-z และตัวเลข (อย่างน้อย 8 ตัว)";
+        return;
+    }
+
+    // บันทึก user ลง localStorage
+    localStorage.setItem("registeredUser", username);
+    localStorage.setItem("currentUser", username);
+
+    alert("สมัครสมาชิกสำเร็จ!");
+    window.location.href = "index.html";
+});
+</script>
+
+</body>
+</html>

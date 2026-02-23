@@ -154,18 +154,18 @@ flowchart LR
 
 User[User / Admin]
 
-subgraph Frontend (Presentation Layer)
+subgraph Frontend
     A[HTML]
     B[CSS]
     C[JavaScript]
 end
 
-subgraph Backend (Application Layer)
+subgraph Backend
     D[Node.js]
     E[Express.js]
 end
 
-subgraph Database (Data Layer)
+subgraph Database
     F[(Database)]
 end
 
@@ -202,5 +202,4 @@ User --> (View Quiz History)
 Admin --> (Manage Users)
 Admin --> (Manage Quiz)
 Admin --> (View Reports)
-
 

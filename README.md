@@ -214,6 +214,41 @@ Admin --> ViewReports[View Reports]
 หน้า index:
 ![Indext-2](https://github.com/user-attachments/assets/e8b03a85-de60-4d6d-805d-093c29568575)
 
+หน้า login:
+![login](https://github.com/user-attachments/assets/32ed9320-82e2-4c5b-9661-e5315bbcd5c8)
+<!-- <img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/32ed9320-82e2-4c5b-9661-e5315bbcd5c8" /> -->
+
+
+หน้า sign in:
+![sign in](https://github.com/user-attachments/assets/16890c62-e0d2-4380-95a1-77ba6395d20b)
+<!-- <img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/16890c62-e0d2-4380-95a1-77ba6395d20b" /> -->
+
+
+หน้า create_quiz:
+![create_quiz](https://github.com/user-attachments/assets/4427ec24-c851-457b-86b1-2ea584cdc297)
+<!-- <img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/4427ec24-c851-457b-86b1-2ea584cdc297" /> -->
+
+
+หน้า dashboard:
+![dashboard](https://github.com/user-attachments/assets/da6b368a-ffa7-4037-bc0b-fbd6decff040)
+<!-- <img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/da6b368a-ffa7-4037-bc0b-fbd6decff040" /> -->
+
+
+หน้า history:
+![history](https://github.com/user-attachments/assets/ead2c51d-dae3-4426-9089-d4e5594a3356)
+<!-- <img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/ead2c51d-dae3-4426-9089-d4e5594a3356" /> -->
+
+
+หน้า about:
+![about](https://github.com/user-attachments/assets/186c078a-eadb-4615-b2a4-c3a2a608f7b4)
+<!-- <img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/186c078a-eadb-4615-b2a4-c3a2a608f7b4" /> -->
+
+
+หน้า quiz test:
+![quiz test](https://github.com/user-attachments/assets/c09de67f-9145-4f61-81ed-2aea147e9972)
+<!-- <img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/c09de67f-9145-4f61-81ed-2aea147e9972" /> -->
+
+
 
 
 ## 14. กระบวนการทำงาน (Process, Methods, and Tools)

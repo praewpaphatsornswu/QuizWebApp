@@ -208,6 +208,9 @@ Admin --> ViewReports[View Reports]
 ## 13. Figma screenshot
 [![Figma Design](https://img.shields.io/badge/Figma-Design_Prototype-blue?style=for-the-badge&logo=figma)](https://www.figma.com/proto/OfZFo1CtLnYNR9EwDZ5AuN/QuizWeb_PJ?node-id=0-1&t=RpKzd3nvIpSk9lfs-1)
 
+![index-1](<img width="2880" height="2048" alt="image" src="https://github.com/user-attachments/assets/db5b0213-e28e-46b7-873c-763d7aca49d9" />
+)
+
 ## 14. กระบวนการทำงาน (Process, Methods, and Tools)
 
 ### 14.1 กระบวนการพัฒนา (Process)

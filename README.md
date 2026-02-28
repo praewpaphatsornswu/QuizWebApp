@@ -208,7 +208,11 @@ Admin --> ViewReports[View Reports]
 ## 13. Figma screenshot
 [![Figma Design](https://img.shields.io/badge/Figma-Design_Prototype-blue?style=for-the-badge&logo=figma)](https://www.figma.com/proto/OfZFo1CtLnYNR9EwDZ5AuN/QuizWeb_PJ?node-id=0-1&t=RpKzd3nvIpSk9lfs-1)
 
+หน้า index ที่ยังไม่ได้ login:
 ![Indext-1](https://github.com/user-attachments/assets/59b8ebac-d318-4c11-9864-3eaa866780d3)
+
+หน้า index:
+![Indext-2](https://github.com/user-attachments/assets/e8b03a85-de60-4d6d-805d-093c29568575)
 
 
 

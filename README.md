@@ -206,6 +206,7 @@ Admin --> ViewReports[View Reports]
 ```
 
 ## 13. Figma screenshot
+[![ดูดีไซน์บน Figma](https://www.figma.com/proto/OfZFo1CtLnYNR9EwDZ5AuN/QuizWeb_PJ?node-id=0-1&t=RpKzd3nvIpSk9lfs-1)]
 
 ## 14. กระบวนการทำงาน (Process, Methods, and Tools)
 
